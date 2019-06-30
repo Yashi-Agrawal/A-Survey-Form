@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form 2</title>
+	<style>
+		#container{
+			width: 1200px;
+			margin: 0 auto;
+			padding: 40px;
+		}
+		form{
+			background-color: #f1f1f1;
+			width: 700px;
+			padding: 20px;
+			margin: 0 auto;
+			border: 20px lightblue solid;
+			border-bottom: none;
+			box-shadow: 2px;
+			padding: 20px;
+			font-family: arial,verdana,sans-serif;
+		}
+		h1,p{
+			text-align: center;
+		}
+		#surveyform{
+			width: 650px;
+			background-color: #f1f1f1;
+			margin: 0 auto;
+			padding: 8px;
+		}
+		input[type='text'],input[type='email'],input[type='age'],select {
+			width: 230px;
+			padding: 8px 5px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+	<form action="">
+		<h1 id="surveyform">Survey Form</h1>
+		<p>Let us know how we can improve freecodecamp<br></p>
+		<table>
+			<tr>
+				<td><label for="username">* Name :</label></td>
+				<td><input type="text" name="username" id="username" placeholder="Enter your name"><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="email">* Email :</label></td>
+				<td><input type="email" name="email" id="email" placeholder="Enter  your email"><br><br></td>
+			</tr>
+			<tr>
+				<td><label for="age">* Age :</label></td>
+				<td><input type="age" name="age" id="age" placeholder="Enter your Age"><br><br></td>
+			</tr>
+			<tr>
+				<td><label>* Which option best describes your current role? </label></td>
+				<td>
+					<select id="role">
+						<option value="Student">Student</option>
+						<option value="Teacher">Teacher</option>
+						<option value="professor">Professional</option>
+						<option value="none">None</option>
+					</select><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td><label>* How likely is that you would reccomend <br>freecodecamp to be a friend ?</label></td>
+				<td><input type="radio" name="define" value="option1">Definitely<br><input type="radio" name="define" value="option2">Maybe<br><input type="radio" name="define" value="option3">Not Sure<br><br></td>
+			</tr>
+
+			<tr>
+				<td>* What do you like most in FCC :</td>
+				<td>
+					<select id="select">
+						<option>Select an option</option>
+						<option>It's way of practising</option>
+						<option>Way he teaches </option>
+						<option>Way he gives us knowledge</option>
+					</select><br><br>
+				</td>
+			</tr>
+			<tr>
+				<td>Things that should be improved in future <br>(Check all that apply):</td>
+				<td><input type="checkbox" name="projects">Front-end projects <br> <input type="checkbox" name="projects">Back-end projects<br><input type="checkbox" name="projects">Data-Visualization</td>
+			</tr>
+
+		</table>
+	</form>
+	</div>
+
+</body>
+</html>
